@@ -73,3 +73,13 @@ pre {
   font-family: monospace;
   margin: $gutter-std;
 }
+
+
+.cow-form-wrapper {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
