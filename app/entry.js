@@ -35,26 +35,25 @@ function CowsayController($log) {
     this.history.pop();
     this.spoken = this.history.pop() || '';
   };
+}
 
-  cowsayApp.controller('NavController', ['$log', NavController]) {
+cowsayApp.controller('NavController', ['$log', NavController]);
 
-    function NavController($log) {
-      $log.debug('NavController')
+function NavController($log) {
+  $log.debug('NavController');
 
-      this.routes = [
-        {
-          name: 'home',
-          url: '/home'
-        },
-        {
-          name: 'about',
-          url: '/about-us'
-        },
-        {
-          name: 'contact',
-          url: '/contact-us'
-        }
-      ]
+  this.routes = [
+    {
+      name: 'home',
+      url: '/home'
+    },
+    {
+      name: 'about',
+      url: '/about-us'
+    },
+    {
+      name: 'contact',
+      url: '/contact-us'
     }
-  }
+  ];
 }
