@@ -35,15 +35,15 @@
           </select>
 
           <input type="text" ng-model="cowsayCtrl.text" required>
-          <button type="submit">Speak!</button>
-
-          <div ng-show="cowsayCtrl.spoken" class="history">
-            <pre>
-              {{ cowsayCtrl.spoken }}
-            </pre>
-            <button ng-click="cowsayCtrl.undo()">Undo!</button>
-          </div>
+          <button type='submit'>Speak!</button>
         </form>
+
+        <div ng-show="cowsayCtrl.spoken" class="history">
+          <pre>
+            {{ cowsayCtrl.spoken }}
+          </pre>
+          <button type="submit" ng-click="cowsayCtrl.undo()">Undo!</button>
+        </div>
       </section>
     </main>
   </body>
